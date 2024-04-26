@@ -1,8 +1,13 @@
+#carrusel {
+    width: 85%;
+}
+
 #footer {
-    background-color: lightslategray;
+    background-color: #84a0c0;
     padding: 20px;
 }
 
-#carrusel {
-    width: 80%;
+
+.card {
+    width: 90%;
 }

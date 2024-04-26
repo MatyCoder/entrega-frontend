@@ -1,24 +1,35 @@
 <html>
   <head>
-    <title>Productora de eventos "NOMBRE"</title>
+    <title>UrbanoSound Producciones</title>
 
+    <!-- Incluimos los estilos personalizados -->
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- Bootstrap -->
+    <!-- Incorporacion de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </head>
   <body>
-    <nav class="navbar bg-primary navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">Productora de eventos</a>
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="UrbanoSound" width="129" height="42">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Opciones de la barra de navegacion -->
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#eventos">Eventos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#contacto">Contacto</a>
             </li>
           </ul>
         </div>
@@ -27,19 +38,25 @@
 
     <div class="container-fluid" style="background-color: rgb(43, 43, 43);">
       <!-- Carrusel -->
-      <div id="carrusel" class="carousel slide mx-auto">
+      <div id="carrusel" class="carousel slide carousel-fade mx-auto" data-bs-ride="carousel">
+        <!-- Accesos rapidos a todas las imagenes -->
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carrusel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="imagen1"></button>
           <button type="button" data-bs-target="#carrusel" data-bs-slide-to="1" aria-label="imagen2"></button>
+          <button type="button" data-bs-target="#carrusel" data-bs-slide-to="2" aria-label="imagen3"></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://placehold.co/800x400" class="d-block w-100" alt="...">
+            <img src="img/car_1.jpg" class="d-block w-100">
           </div>
           <div class="carousel-item">
-            <img src="https://placehold.co/800x400" class="d-block w-100" alt="...">
+            <img src="img/car_2.jpg" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/car_3.jpg" class="d-block w-100">
           </div>
         </div>
+        <!-- Botones para moverse entre las imagenes -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         </button>
@@ -48,36 +65,58 @@
         </button>
       </div>
 
-      <!-- Tarjetas -->
-      <div class="container mt-4">
-        <div class="row">
+      <!-- Lista de eventos que estamos realizando -->
+      <div class="container mt-5">
+        <div id="eventos" class="row">
+          <h1 class="text-center text-white mb-4">Próximos eventos</h1>
           <div class="col-md-4">
-            <div class="card">
-              <img src="https://placehold.co/300x200" class="card-img-top" alt="...">
+            <div class="card text-center">
+              <img src="img/pablo chill-e.jpg" class="card-img-top" alt="Pablo Chill-E">
               <div class="card-body">
-                <h5 class="card-title">Titulo</h5>
-                <p class="card-text">Descripción.</p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+                <p class="card-text">
+                  ¡No te pierdas este sábado 27 de abril un show imperdible en el <strong>Estadio Nacional</strong>!<br>
+                  Disfruta de la mejor música urbana en vivo con <strong>Pablo Chill-E</strong>, <strong>Pailita</strong> y <strong>Jordan 23</strong>.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Fecha:</strong> 27 de abril de 2024</li>
+                  <li class="list-group-item"><strong>Lugar:</strong> Estadio Nacional, Santiago</li>
+                  <li class="list-group-item"><strong>Artistas:</strong> Pablo Chill-E, Pailita y Jordan 23</li>
+                </ul>
+                <a href="#" class="btn btn-secondary mt-2 disabled">Agotado</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <img src="https://placehold.co/300x200" class="card-img-top" alt="...">
+            <div class="card text-center">
+              <img src="img/cris-mj.jpeg" class="card-img-top" alt="Cris MJ">
               <div class="card-body">
-                <h5 class="card-title">Titulo</h5>
-                <p class="card-text">Descripción.</p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+                <p class="card-text">
+                  Este 15 de mayo no te puedes perder una noche llena de música y diversión en la <strong>Plaza Sotomayor de Valparaíso</strong>.
+                  Disfruta de los mejores éxitos de <strong>Princesa Alba</strong>, <strong>Cris MJ</strong>, <strong>Polimá Westcoast</strong> y <strong>Jordan 23</strong>.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Fecha:</strong> 15 de mayo de 2024</li>
+                  <li class="list-group-item"><strong>Lugar:</strong> Plaza Sotomayor, Valparaíso</li>
+                  <li class="list-group-item"><strong>Artistas:</strong> Princesa Alba, Cris MJ, Polimá Westcoast y Jordan 23 </li>
+                </ul>
+                <a href="#" class="btn btn-primary mt-2">Ver más</a>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card">
-              <img src="https://placehold.co/300x200" class="card-img-top" alt="...">
+            <div class="card text-center">
+              <img src="img/standly.jpeg" class="card-img-top" alt="Standly">
               <div class="card-body">
-                <h5 class="card-title">Titulo</h5>
-                <p class="card-text">Descripción.</p>
-                <a href="#" class="btn btn-primary">Ver más</a>
+                <p class="card-text">
+                  Atención gente de Concepción, se acerca una noche épica de música urbana el 30 de mayo.
+                  Ven al <strong>Club Hípico de Concepción</strong> y disfruta de <strong>Paloma Mami</strong>, <strong>Young Cister</strong>, <strong>Marcianeke</strong> y <strong>Standly</strong> en vivo.
+                </p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Fecha:</strong> 30 de mayo de 2024</li>
+                  <li class="list-group-item"><strong>Lugar:</strong> Club Hípico de Concepción</li>
+                  <li class="list-group-item"><strong>Artistas:</strong> Paloma Mami, Young Cister, Marcianeke y Standly</li>
+                </ul>
+                <a href="#" class="btn btn-primary mt-2">Ver más</a>
               </div>
             </div>
           </div>
@@ -85,7 +124,7 @@
       </div>
       
       <!-- Footer -->
-      <div id="footer" class="row mt-4">
+      <div id="footer" class="row mt-5">
         <!-- Seccion de contacto -->
         <div class="col-lg-7">
           <!-- Encapsulamos todo lo de contacto en una sola fila -->
@@ -93,7 +132,7 @@
             <!-- Formulario de contacto -->
             <div class="col-6">
               <h2 class="mb-3">Contactanos</h2>
-              <form>
+              <form id="contacto">
                 <div class="mb-2">
                   <label for="txt_nombre" class="form-label">Nombre</label>
                   <input type="text" class="form-control" id="txt_nombre">
@@ -116,9 +155,9 @@
             <div class="col-6 text-end">
                 <h2>Ubicación</h2>
                 <ul style="list-style: none;">
-                  <li>CALLE PLACEHOLDER</li>
-                  <li>TELEFONO PLACEHOLDER</li>
-                  <li>CIUDAD PLACEHOLDER</li>
+                  <li>Calle Prat 0325</li>
+                  <li>+56 (45) 3802-6102</li>
+                  <li>Temuco, Chile</li>
                 </ul>
               </div>
               <!-- Fin de contacto -->
@@ -127,16 +166,20 @@
 
         <!-- Derechos de autor y otros -->
         <div class="col-lg-5 d-flex flex-column justify-content-between">
+          <!-- Descripcion de la empresa -->
           <div>
-            <h2>Acerca de</h2>
-            <p>Con más de 10 años de experiencia, somos una de las productoras de eventos más prestigiosas de la región de La Araucanía.</p>
+            <h2>Nosotros</h2>
+            <p>Con más de 10 años de experiencia, UrbanoSound Producciones es una de las productoras de eventos más prestigiosas de la región de La Araucanía.</p>
             <p>Nuestra misión es llevar la emoción y la energía de la música urbana a todo el país. Nos esforzamos por crear experiencias inolvidables que reúnan a los amantes de la música en eventos vibrantes y llenos de talento.</p>
-            <!-- <p>Desde conciertos íntimos hasta festivales multitudinarios, trabajamos incansablemente para proporcionarte los mejores espectáculos y promover la escena musical urbana nacional. ¡Únete a nosotros y sé parte de la experiencia!</p> -->
+            <p>Desde conciertos íntimos hasta festivales multitudinarios, trabajamos incansablemente para proporcionarte los mejores espectáculos y promover la escena musical urbana nacional.</p>
           </div>
-          
-          <p class="text-end">Sitio web creado por Matías.</p>
-      </div>
-      
+
+          <!-- Derechos de autor -->
+          <div class="d-flex flex-column">
+            <img src="img/logo.png" alt="UrbanoSound" width="129" height="42">
+            <p class="mt-4">Todos los derechos reservados - 2024</p>
+          </div>          
+        </div>
       </div>
     </div>
       
