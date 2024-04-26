@@ -1,13 +1,15 @@
+/* Ajustamos un poco el tamaño del carrusel */
 #carrusel {
     width: 85%;
 }
 
+/* Cambiamos el estilo del footer */
 #footer {
     background-color: #84a0c0;
     padding: 20px;
 }
 
-
+/* Ajustamos el tamaño de las tarjetas */
 .card {
     width: 90%;
 }
